@@ -1,6 +1,6 @@
 # LampROS
 
-## Git Hub let's us work in the same folder, while not interfering with each others' work.
+## Git Hub lets us work in the same folder, while not interfering with each others' work.
 
 
 -- 
@@ -20,24 +20,27 @@ Originally, you will be in **MAIN BRANCH**
 
 your **BRANCH** is your current progress
 
-### You can checkout the available **BRANCHES** with git branch
+### You can see the available **BRANCHES** with ```git branch```
 
 You can change your current **BRANCH** with ```git checkout branch```
 
 ### You can now work freely without risk of breaking anything 
 
-## CHanging contents inside your branch
+## Changing contents inside your branch
 
 Some basic Git commands are:
 ```
 git status
 git branch
 ``` 
+
+- to add changes 
+
 first change to (your) branch
 
 ```git checkout currentBranch```
 
-- to add changes 
+then add save your changes to the cloud
 ```
 git add .                                       - adds all (new)files
 git commit -m "comment descrbing addition"      - commits the changes
@@ -47,18 +50,18 @@ git push origin currentBranch                   - pushes changes to current bran
 
 # Never work direcly on main, use your own branch
 
-### Once your branch is stable and you wish to make your branch, the main branch then you need to merge.
+### Once your branch is stable and you wish to make your branch, the main branch; **merge**.
 
 
 ## Merging
 
-Go to main
+First, Go to main
 
 ``` 
 git checkout main
-
+```
 Make sure your main branch is up to date with the remote repository
-
+```
 git pull origin main
 
 git merge feature-branch
@@ -70,7 +73,7 @@ git push origin main
 
 git pull - pulls current changes , download and update the cloud files to ur local files
 
-git push - push current changes, upload and updates the local files to cloud [ don't forget to add and commit your changes before pushing]
+git push origin branch - push current changes, upload and updates the local files to cloud [ don't forget to add and commit your changes before pushing]
 
 git branch - Shows available branches
 
